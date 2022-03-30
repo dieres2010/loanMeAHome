@@ -1,5 +1,5 @@
 <section>
-  <h2>Create New Post</h2>
+  <h2>Create New Loan Product</h2>
 
   <form class="new-post-form">
     <div>
@@ -7,13 +7,92 @@
       <input type="text" id="post-title" name="post-title" />
     </div>
      <div>
-      <label for="post-content">Post Content</label>
-      <input type="text" id="post-content" name="post-content" />
+      <label for="post-loan_content">Loan Details</label>
+      <input type="text" id="post-loan_content" name="post-content" />
     </div>
     <div>
-      <label for="post-url">Link</label>
+      <label for="post-url">Application Link</label>
       <input id="post-url" name="post-url" />
     </div>
+
+  <div>
+    <label for="property-type">Property Type</label>
+    <select name="Property Type" id="property_type">
+  <option value="house">House</option>
+  <option value="condo">Condo</option>
+  <option value="townhouse">Townhouse</option>
+  <option value="multi-family">Lot & Land</option>
+  <option value="multi-family">Mobile Home</option>
+  <option value="multi-family">Manufactured</option>
+</select>
+  </div>
+
+  <div>
+    <label for="loan-type">Loan Type</label>
+    <select name="Loan Type" id="Loan_type">
+  <option value="fha">FHA</option>
+  <option value="va">VA</option>
+  <option value="conventional">Conventional</option>
+  <option value="usda">Rural USDA</option>
+  <option value="mobile_home">Mobile Home</option>
+  <option value="rehab-203k">Fixer 203K Rehab</option>
+  <option value="land">Land</option>
+  <option value="hard-money">Hard Money Invest</option>
+  <option value="new-construction">New Construction</option>
+  <option value="heloc">Home Equity</option>
+  <option value="special">Special</option> 
+</select>
+  </div>
+
+   <div>
+    <label for="down-payment">Down Payment</label>
+    <select name="Down Payment" id="down_payment">
+  <option value=0>0% Down</option>
+  <option value=3>3% Down</option>
+  <option value=3.5>3.5% Down</option>
+  <option value=5>5% Down</option>
+  <option value=20>20% Down</option>
+  <option value=1>Home Equity</option>
+</select>
+  </div>
+
+
+    <div>
+    <label for="credit">Credit Score</label>
+    <select name="credit_score" id="credit_score">
+  <option value=500>580 or Less</option>
+  <option value=590>580 - 600</option>
+  <option value=600>600 - 620</option>
+  <option value=620>620 - 700</option>
+  <option value=700>700 - 750</option>
+  <option value=750>750 or Higher</option>
+</select>
+  </div>
+
+   <div>
+    <label for="employment">Employment</label>
+    <select name="employment" id="employment">
+  <option value="1-year">1 Year W2</option>
+  <option value="2-year">2 Year W2</option>
+    <option value="1099">1099 Self Employed</option>
+  <option value="None">Not Employed</option>
+</select>
+  </div>
+
+   <div>
+    <label for="condition">Appraisal Conditions</label>
+    <select name="condition" id="condition">
+  <option value="strict">Strict - Avg/Good Condition</option>
+  <option value="moderate">Moderate - Avg Condition</option>
+    <option value="lenient">Lenient - Limited</option>
+  <option value="none">No Appraisal</option>
+</select>
+  </div>
+
+  
+
+
+
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
