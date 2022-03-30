@@ -1,0 +1,11 @@
+
+<h1>Tech Blog Posts</h1>
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
+
+{{> user-details users}}
