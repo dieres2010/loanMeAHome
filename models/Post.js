@@ -12,7 +12,7 @@ Post.init(
       primaryKey: true,
       autoIncrement: true
     },
-    loan_content: {
+    content: {
       type: DataTypes.STRING,
       allowNull: true,
       
