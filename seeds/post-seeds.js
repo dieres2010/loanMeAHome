@@ -2,35 +2,161 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    content: 'this is contentkajfldasfjlaksdfj;askdlfjaslkdfjlasdfsadf',
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
     post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
-    user_id: 10
-  },
-  {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    content: 'this is contentkajfldasfjlaksdfj;askdlfjaslkdfjlasdfsadf',
-    post_url: 'https://nasa.gov/donec.json',
-    user_id: 8
-  },
-  {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    content: 'this is contentkajfldasfjlaksdfj;askdlfjaslkdfjlasdfsadf',
-    post_url: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    property_type: 'house',
+    loan_type: 'fha',
+    down_payment: 0,
+    credit_score: 500,
+    employment: '1-year',
+    condition: 'strict',
     user_id: 1
   },
   {
-    title: 'Nunc purus.',
-    content: 'this is contentkajfldasfjlaksdfj;askdlfjaslkdfjlasdfsadf',
-    post_url: 'http://desdev.cn/enim/blandit/mi.jpg',
-    user_id: 4
+    content: 'This loan is for people for a first time home buyer',
+    title: 'maybe title or no title.',
+    post_url: 'https://google.com',
+    property_type: 'condo',
+    loan_type: 'va-loan',
+    down_payment: 3,
+    credit_score: 590,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
   },
   {
-    title: 'Pellentesque eget nunc.',
-    content: 'this is contentkajfldasfjlaksdfj;askdlfjaslkdfjlasdfsadf',
-    post_url: 'http://google.ca/nam/nulla/integer.aspx',
-    user_id: 7
-  }
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'townhouse',
+    loan_type: 'conventional',
+    down_payment: 3.5,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'lot-land',
+    loan_type: 'rural-usda',
+    down_payment: 5,
+    credit_score: 620,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'mobile-home',
+    loan_type: 'mobile-home',
+    down_payment: 20,
+    credit_score: 700,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'rehab-203k',
+    down_payment: 'home-equity',
+    credit_score: 750,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'multifamily',
+    loan_type: 'land',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'distressed',
+    loan_type: 'hard-money',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'new-construction',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'heloc',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'dp-assistance',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'pre-med',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
+  {
+    content: 'this is loan content',
+    title: 'maybe title or no title.',
+    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    property_type: 'manufactured',
+    loan_type: 'rental-invest',
+    down_payment: 0,
+    credit_score: 600,
+    employment: '1-year',
+    condition: 'strict',
+    user_id: 1
+  },
  
 ];
 

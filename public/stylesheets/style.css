@@ -10,12 +10,7 @@ body, html {
   color: #333;
 }
 
-.post {
-  border: solid 2px blue;
-  border-radius: 10px;
-  background-color: #9cff93;
-  
-}
+
 
 .forms{
   background-color: #ffffff;
@@ -30,7 +25,7 @@ body, html {
   margin: 5px;
 }
 
-.loginclass {
+.class {
   background-color: #ff9f9f;
   justify-content: center;
   width: 300px;
@@ -151,6 +146,18 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+}
+.post {
+  border: solid 2px blue;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .post .title span {

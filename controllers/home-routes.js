@@ -8,9 +8,15 @@ router.get('/', (req, res) => {
   Post.findAll({
     attributes: [
       'id',
+      'content',
       'post_url',
       'title',
-      'content',
+      'property_type',
+      'loan_type',
+      'down_payment',
+      'credit_score',
+      'employment',
+      'condition',
       'created_at',
     ],
     include: [
@@ -75,9 +81,15 @@ router.get('/post/:id', (req, res) => {
     },
     attributes: [
       'id',
+      'content',
       'post_url',
       'title',
-      'content',
+      'property_type',
+      'loan_type',
+      'down_payment',
+      'credit_score',
+      'employment',
+      'condition',
       'created_at',
     ],
     include: [
