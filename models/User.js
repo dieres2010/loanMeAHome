@@ -37,9 +37,25 @@ User.init(
       validate: {
         len: [4]
       }
-    }
-  },
-  {
+    },
+    license_number: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [7]
+      }
+    },
+    phone_number: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [10]
+      }
+    },
+    mortgage_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
       async beforeCreate(newUserData) {
