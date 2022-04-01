@@ -56,6 +56,9 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+  },
+  
+  {
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
       async beforeCreate(newUserData) {

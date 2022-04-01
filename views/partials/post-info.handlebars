@@ -1,7 +1,11 @@
 <article class="post">
   <div class="title">
     
-    
+    <h2> Lender info</h2>
+{{user.email}}
+{{user.license_number}}
+{{user.phone_number}}
+{{user.mortgage_name}}
 <div>
         <img src="/images/property/{{property_type}}.png" width="50" height="50" alt="{{property_type}}">
     <p>   {{property_type}}</p>
@@ -19,6 +23,13 @@
 
         <p>   {{credit_score}}</p>
   </di>
+
+
+
+
+
+
+
   <a href="{{ post_url}}" target="_blank">{{title}}</a>
     <p>   {{content}}</p>
       <p>   {{employment}}</p>

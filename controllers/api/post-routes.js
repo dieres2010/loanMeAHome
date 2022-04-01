@@ -26,12 +26,12 @@ router.get('/', (req, res) => {
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
-          attributes: ['username']
+          attributes: ['username' ]
         }
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username', 'email', 'license_number', 'phone_number', 'mortgage_name']
       }
     ]
   })
@@ -94,6 +94,12 @@ router.post('/', withAuth, (req, res) => {
     title: req.body.title,
     post_url: req.body.post_url,
     content: req.body.content,
+    property_type: req.body.property_type,
+    loan_type: req.body.loan_type,
+    down_payment: req.body.down_payment,
+    credit_score: req.body.credit_score,
+    employment: req.body.employment,
+    condition: req.body.condition,
     user_id: req.session.user_id
   })
     .then(dbPostData => res.json(dbPostData))
