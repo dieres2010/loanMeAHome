@@ -1,7 +1,15 @@
-<article class="post">
+
+
+
+<article class="post" id="search">
   <div class="title">
-    
-    
+    <div class="search-fields">
+    <h2> {{property_type}} {{loan_type}} {{down_payment}} {{credit_score}}
+</h2></div>
+{{user.email}}
+{{user.license_number}}
+{{user.phone_number}}
+{{user.mortgage_name}}
 <div>
         <img src="/images/property/{{property_type}}.png" width="50" height="50" alt="{{property_type}}">
     <p>   {{property_type}}</p>
@@ -19,6 +27,13 @@
 
         <p>   {{credit_score}}</p>
   </di>
+
+
+
+
+
+
+
   <a href="{{ post_url}}" target="_blank">{{title}}</a>
     <p>   {{content}}</p>
       <p>   {{employment}}</p>

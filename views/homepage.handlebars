@@ -1,11 +1,26 @@
 
 <h1>Home Loans</h1>
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+<section>
+ <div id="md:flex lg:flex"
+      class="loans-holder ">
+      <div class="input-group"><h3 class="">Filter Home Loans</h3>
+        <input name="input-search" id="search" onkeyup="searchLoans()" placeholder="Search Loans" type="text" autofocus="true" class="form-control ml-5"/>
+     
+      </div>  
+      <div class="post-list" id=""></div>
+    </div>
+  </section>
 
-{{> user-details users}}
+<div class="div-list">
+<ul class="post-list">
+  {{#each posts as |post|}}
+  
+    {{> post-info post }}
+ 
+  {{/each}}
+</ul>
+</div>
+
+
+
+<script src ="/javascript/loanfilter.js"></script>

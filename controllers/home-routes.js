@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username', 'email', 'license_number', 'phone_number', 'mortgage_name']
       }
     ]
   })
