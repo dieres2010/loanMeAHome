@@ -42,14 +42,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [7]
+        len: [4]
       }
     },
     phone_number: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [10]
+        len: [8]
       }
     },
     mortgage_name: {

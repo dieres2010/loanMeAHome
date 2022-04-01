@@ -28,14 +28,24 @@ async function signupFormHandler(event) {
   const username = document.querySelector('#username-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
+  const license = document.querySelector('#license-signup').value.trim();
+  const mortgage = document.querySelector('#mortgage-signup').value.trim();
+  const phone = document.querySelector('#phone-signup').value.trim();
 
-  if (username && email && password) {
+
+
+
+  if (username && email && password && license && mortgage && phone) {
+    alert('clicked')
     const response = await fetch('/api/users', {
       method: 'post',
       body: JSON.stringify({
         username,
         email,
-        password
+        password,
+        license,
+        mortgage,
+        phone
       }),
       headers: { 'Content-Type': 'application/json' }
     });
@@ -43,7 +53,7 @@ async function signupFormHandler(event) {
     if (response.ok) {
       document.location.replace('/dashboard/');
     } else {
-      alert(response.statusText);
+      document.location.replace('/dashboard/');
     }
   }
 }
