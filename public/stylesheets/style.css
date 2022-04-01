@@ -10,7 +10,9 @@ body, html {
   color: #333;
 }
 
-
+h5 {
+  display: none;
+}
 
 .forms{
   background-color: #ffffff;

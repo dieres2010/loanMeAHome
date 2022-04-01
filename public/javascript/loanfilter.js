@@ -3,7 +3,7 @@ function searchLoans() {
     var divs = document.getElementsByClassName("post");
     filter = input.value.toUpperCase();
     for (i = 0; i < divs.length; i++) {
-      h2 = divs[i].getElementsByTagName("h2")[0];
+      h2 = divs[i].getElementsByTagName("h5")[0];
       txtValue = h2.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         divs[i].style.display = "";

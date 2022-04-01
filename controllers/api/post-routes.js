@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
       'id',
       'content',
       'post_url',
-      'title',
       'property_type',
       'loan_type',
       'down_payment',
@@ -51,7 +50,6 @@ router.get('/:id', (req, res) => {
       'id',
       'content',
       'post_url',
-      'title',
       'property_type',
       'loan_type',
       'down_payment',
@@ -91,7 +89,6 @@ router.get('/:id', (req, res) => {
 router.post('/', withAuth, (req, res) => {
   // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
-    title: req.body.title,
     post_url: req.body.post_url,
     content: req.body.content,
     property_type: req.body.property_type,
@@ -115,7 +112,15 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
-      title: req.body.title
+      post_url: req.body.post_url,
+      content: req.body.content,
+      property_type: req.body.property_type,
+      loan_type: req.body.loan_type,
+      down_payment: req.body.down_payment,
+      credit_score: req.body.credit_score,
+      employment: req.body.employment,
+      condition: req.body.condition,
+      user_id: req.session.user_id
     },
     {
       where: {

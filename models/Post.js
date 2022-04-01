@@ -17,10 +17,7 @@ Post.init(
       allowNull: true,
       
     },
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+   
     post_url: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -41,7 +38,7 @@ Post.init(
       allowNull: false
     },
     credit_score: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     employment: {
