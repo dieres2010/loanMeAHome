@@ -28,14 +28,14 @@ async function signupFormHandler(event) {
   const username = document.querySelector('#username-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-  const license = document.querySelector('#license-signup').value.trim();
-  const mortgage = document.querySelector('#mortgage-signup').value.trim();
-  const phone = document.querySelector('#phone-signup').value.trim();
+  const license_number = document.querySelector('input[name="license-signup"]').value.trim();
+  const mortgage_name = document.querySelector('input[name="mortgage-signup"]').value.trim();
+  const phone_number = document.querySelector('input[name="phone-signup"]').value.trim();
 
 
 
 
-  if (username && email && password && license && mortgage && phone) {
+  if (username && email && password ) {
     alert('clicked')
     const response = await fetch('/api/users', {
       method: 'post',
@@ -43,9 +43,9 @@ async function signupFormHandler(event) {
         username,
         email,
         password,
-        license,
-        mortgage,
-        phone
+        license_number,
+        mortgage_name,
+        phone_number
       }),
       headers: { 'Content-Type': 'application/json' }
     });
