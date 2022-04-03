@@ -10,6 +10,23 @@ body, html {
   color: #333;
 }
 
+.input-group {
+  background-color: black;
+  display: flex;
+ flex-direction: row;
+ margin: 15px;
+ border: 4px solid black;
+}
+
+.form-control {
+width: 100%;
+padding: 10px 15px;
+flex-direction: row;
+}
+
+
+
+
 body {
   background-color: #3486eb;
 }
