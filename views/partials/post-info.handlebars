@@ -4,47 +4,41 @@
 <article class="post" id="search">
   <div class="title">
     <div class="search-fields">
-    <h5> {{property_type}} {{loan_type}} {{down_payment}} {{credit_score}} {{user.mortgage_name}}
-</h5></div>
-{{user.email}}
-{{user.license_number}}
-{{user.phone_number}}
-{{user.mortgage_name}}
-<div>
-        <img src="/images/property/{{property_type}}.png" width="50" height="50" alt="{{property_type}}">
-    <p>   {{property_type}}</p>
-    </div>
-    <div>
-        <img src="/images/loans/{{loan_type}}.png" width="50" height="50" alt="{{loan_type}}">
-    <p>   {{loan_type}}</p>
-    </div>
-    <div>
-        <img src="/images/down-payment/{{down_payment}}.png" width="50" height="50" alt="{{down_payment}}">
-    <p>   {{down_payment}}</p>
-    </div>
-    <di>
-        <img src="/images/credit/{{credit_score}}.png" width="50" height="50" alt="{{credit_score}}">
+      <h5> 
+        {{property_type}} {{loan_type}} {{down_payment}} {{credit_score}} {{user.mortgage_name}}
+      </h5>
+  </div>
+  <div class="loan-details">
+    <span class="info">Email:</span>  {{user.email}}  &nbsp;  <span class="info">Lender License Number:</span>  {{user.license_number}}<br>
 
-        <p>   {{credit_score}}</p>
-  </di>
-
-
-
-
-
-
-
-  <a href="{{ post_url}}" target="_blank"></a>
-    <p>   {{content}}</p>
-      <p>   {{employment}}</p>
-    <p>   {{condition}}</p>
-    <span>{{ post_url}}</span>
+    <span class="info">Lender Phone Number:</span>  {{user.phone_number}}   &nbsp;  <span class="info">Mortgage Company:</span>  {{user.mortgage_name}}<br>
   </div>
   <div class="meta">
-    By {{user.username}} on {{format_date created_at}}
-   
-    |
-   
-  
+    By {{user.username}} on {{format_date created_at}}<br>
+    <a href="{{post_url}}" target="_blank">Loan Application</a>
   </div>
+  <div class="loan-info">
+    <div class="loan-data">
+      <img src="/images/property/{{property_type}}.png" width="50" height="50" alt="{{property_type}}">
+         &nbsp;  <p>Property Type:<br>
+        {{property_type}}</p>
+    </div>
+    <div class="loan-data">
+      <img src="/images/loans/{{loan_type}}.png" width="50" height="50" alt="{{loan_type}}">
+         &nbsp;  <p>Loan Type:<br>
+        {{loan_type}}</p>
+    </div>
+    <div class="loan-data">
+      <img src="/images/down-payment/{{down_payment}}.png" width="50" height="50" alt="{{down_payment}}">
+         &nbsp;  <p>Down Payment:<br>
+        {{down_payment}}</p>
+    <div class="loan-data">
+      <img src="/images/credit/{{credit_score}}.png" width="50" height="50" alt="{{credit_score}}">
+         &nbsp;  <p>Credit Score:<br>
+        {{credit_score}}</p>
+    </div>
+  </div>
+
+
+
 </article>
