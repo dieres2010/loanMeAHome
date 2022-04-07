@@ -6,9 +6,9 @@ const postdata = [
     title: 'Stratton - Hard Money Loan',
     post_url: 'https://www.strattonequities.com/loan-pre-qualification',
     property_type: 'House',
-    loan_type: 'Hard Money',
-    down_payment: "20%-down",
-    credit_score: "580",
+    loan_type: 'hard-money',
+    down_payment: "20-down",
+    credit_score: "credit-620",
     employment: '2-year',
     condition: 'strict',
     user_id: 1
@@ -19,8 +19,8 @@ const postdata = [
     post_url: 'https://hosting.bytesoftware.com/apps/BCP_57134?',
     property_type: 'House',
     loan_type: 'Conventional',
-    down_payment: "5%-down",
-    credit_score: "700",
+    down_payment: "5-down",
+    credit_score: "credit-700",
     employment: '1-year',
     condition: 'strict',
     user_id: 2
@@ -41,10 +41,10 @@ const postdata = [
     content: 'MMG Loans',
     title: 'FHA Loan with MMG Corp',
     post_url: 'https://mmgcapitalgroup.com/our-products/term-loan/',
-    property_type: 'Condo',
-    loan_type: 'Condo',
+    property_type: 'condo',
+    loan_type: 'pre-med',
     down_payment: "5-down",
-    credit_score: "credit-650",
+    credit_score: "credit-580",
     employment: '1-year',
     condition: 'strict',
     user_id: 5
@@ -54,8 +54,8 @@ const postdata = [
     title: 'Stratton Equities - Investment Loans',
     post_url: 'https://www.strattonequities.com/loan-pre-qualification',
     property_type: 'House',
-    loan_type: 'Investment',
-    down_payment: "10%-down",
+    loan_type: 'rental-invest',
+    down_payment: "3.5-down",
     credit_score: "credit-700",
     employment: '1-year',
     condition: 'strict',
@@ -67,12 +67,13 @@ const postdata = [
     post_url: 'https://farmcredit.com/',
     property_type: 'House',
     loan_type: 'FHA',
-    down_payment: '0%-down',
+    down_payment: '0-down',
     credit_score: "credit-750",
     employment: '1-year',
     condition: 'strict',
     user_id: 6
   }
+
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
