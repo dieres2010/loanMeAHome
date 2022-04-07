@@ -13,8 +13,9 @@ body, html {
 .logo {
 
  height: 4%;
- width: 100%;
- background-color: #0cb2cf;
+ width: 50%;
+ text-align: center;
+ margin: auto;
 }
 
 .input-group {
