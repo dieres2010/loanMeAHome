@@ -1,8 +1,11 @@
+
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const axios = require('axios');
+
 
 
 const app = express();
@@ -23,7 +26,9 @@ const sess = {
 
 app.use(session(sess));
 
+
 const helpers = require('./utils/helpers');
+const { builtinModules } = require('module');
 
 const hbs = exphbs.create({ helpers });
 
@@ -39,8 +44,9 @@ app.use(require('./controllers/'));
 
 
 
-
+ 
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+

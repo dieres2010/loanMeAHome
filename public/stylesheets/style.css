@@ -75,6 +75,7 @@ h5 {
 
 h2 {
   font-size: 50px;
+  color: black;
   
 }
 
@@ -169,12 +170,13 @@ section {
 
 aside {
   flex: 1.5;
-  background-color: #197d0f;
-  padding: 0px;
+  background-color: #7ccbff;
+  padding: 5px;
   text-align: left;
   margin-left: 0px;
-  color: rgb(204, 0, 0);
+  color: rgb(0, 0, 0);
   width: 100%;
+  font-style: italic;
 }
 
 .main-gallery {
