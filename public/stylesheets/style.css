@@ -12,22 +12,21 @@ body, html {
 
 .logo {
 
- height: 4%;
- width: 50%;
- text-align: center;
- margin: auto;
+width: 200px;
+ text-align: left;
+ 
 }
 
 .input-group {
   background-color: black;
   display: flex;
- flex-direction: row;
  margin: 15px;
+ width: 90%;
  border: 4px solid black;
 }
 
 .form-control {
-width: 100%;
+width: 300%;
 padding: 10px 15px;
 flex-direction: row;
 }
@@ -72,9 +71,11 @@ h5 {
   width: 300px;
   margin: 5px;
 
+}
+
+h2 {
+  font-size: 50px;
   
-
-
 }
 
 a {
@@ -153,9 +154,38 @@ header h1 {
   font-size: 1em;
 }
 
+
+
+
 main {
-  flex: 1;
-  padding: 2% 4%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+
+aside {
+  flex: 1.5;
+  background-color: #197d0f;
+  padding: 0px;
+  text-align: left;
+  margin-left: 0px;
+  color: rgb(204, 0, 0);
+  width: 100%;
+}
+
+.main-gallery {
+  flex: 4;
+  background-color: rgb(66, 65, 65);
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
 }
 
 .btn-no-style {
@@ -243,7 +273,7 @@ main {
 }
 
 .new-post-form input {
-  width: 300px;
+  width: 100%;
 }
 
 .edit-post-form {

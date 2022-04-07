@@ -24,14 +24,25 @@
         {{/if}}
       </nav>
     </header>
+
     <main>
+      <aside>
+        <img src="/images/logo/logo.png" class="logo">
+
+        <h2>This is the aside</h2>
+      </aside>
+      <div class="main-gallery">
       {{{ body }}}
+      </div>
     </main>
     <footer>
       Thanks for visiting!
     </footer>
   </div>
   
+
+    <script src="/javascript/getfeed.js"></script>
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
