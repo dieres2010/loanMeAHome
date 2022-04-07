@@ -1,4 +1,7 @@
 const router = require('express').Router();
+var passport = require('passport');
+var LocalStrategy = require('passport-local');
+var crypto = require('crypto');
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
