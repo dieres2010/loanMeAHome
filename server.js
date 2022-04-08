@@ -5,7 +5,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const axios = require('axios');
-
+var colors = require('colors');
 
 
 const app = express();
@@ -43,6 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/'));
 
 
+console.log("Load up the server and create Table if they do not exist".rainbow)
 
  
 
