@@ -24,7 +24,7 @@ Download from Github and run nmp install to install all the dependant packages.
  ## License
 MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 ## Contributing: 
-Chris Waters, Diego Restrep, Gustavo Davila   
+Chris Waters, Diego Restrepo, Gustavo Davila   
 ## Tests:
 Test by adding loans and filtering results.
 ## Built with:
